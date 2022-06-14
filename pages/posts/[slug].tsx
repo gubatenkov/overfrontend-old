@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { ParsedUrlQuery } from 'querystring';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 
@@ -57,13 +56,13 @@ const Index: NextPage<IProps> = ({
                 </p>
               </div>
               <div className="post__content-img__wrap flex overflow-hidden rounded-md shadow-md">
-                <Image
+                <img
                   className="post__content-img"
+                  loading="lazy"
                   width={postImgW}
                   height={postImgH}
                   src={postImgUrl}
                   alt={headingImage.alt}
-                  priority
                 />
               </div>
             </div>

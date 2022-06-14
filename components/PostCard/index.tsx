@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { IPost } from 'interfaces';
 import { urlForImage } from 'lib/sanity';
@@ -28,8 +27,9 @@ const PostCard: FC<IPost> = ({
           </span>
         </div>
         <div className="post-card__img-box absolute top-0 left-0 translate-y-full duration-300 ease-in group-hover:translate-y-0">
-          <Image
+          <img
             className="post-card__img object-cover"
+            loading="lazy"
             src={postImgUrl}
             width={postImgW}
             height={postImgH}

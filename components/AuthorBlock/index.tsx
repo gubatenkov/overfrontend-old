@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import Image from 'next/image';
 
 import { IAuthor } from 'interfaces';
 import { urlForImage } from 'lib/sanity';
@@ -18,13 +17,13 @@ const AuthorBlock: FC<IProps> = ({ author: { name, avatar, bio } }) => {
     <div className="author mx-auto flex  max-w-[75%] items-center">
       <div className="author__preview flex min-w-fit rounded-full border border-[#ededed] p-8">
         <div className="author__preview-box flex rounded-full shadow-[0px_5px_10px_0px_rgba(156,163,175,0.5)]">
-          <Image
+          <img
             className="rounded-full"
+            loading="lazy"
             width={avatarW}
             height={avatarH}
             src={avatarUrl}
             alt={avatar.alt}
-            priority
           />
         </div>
       </div>
