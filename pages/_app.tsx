@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import '../styles/globals.css';
 
-export default MyApp
+// eslint-disable-next-line react/jsx-props-no-spreading
+const MyApp = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />;
+
+export default MyApp;

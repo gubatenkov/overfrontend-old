@@ -1,0 +1,13 @@
+{
+    "git.ignoreLimitWarning": true,
+    "eslint.format.enable": true,
+    "eslint.run": "onSave",
+    "eslint.rules.customizations": [],
+    "eslint.useESLintClass": true,
+    "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.preferences.quoteStyle": "single",
+}
